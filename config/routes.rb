@@ -9,7 +9,8 @@ Rails.application.routes.draw do
   get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
   get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
 
-  mount API::User::Endpoints => "/api/"
+  mount API::Param::Endpoints => "/api/"
+  mount API::Header::Endpoints => "/api/"
 
   # Defines the root path route ("/")
   # root "posts#index"

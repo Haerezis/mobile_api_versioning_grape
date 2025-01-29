@@ -1,5 +1,6 @@
 require "grape"
 require_relative "#{Rails.root}/lib/grape/custom_param_versioner.rb"
+require_relative "#{Rails.root}/lib/grape/hb_date_header_versioner.rb"
 
 module API
   class Base < Grape::API

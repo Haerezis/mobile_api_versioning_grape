@@ -1,4 +1,4 @@
-class API::User::Tests::Index < API::Base
+class API::Param::Tests::Index < API::Base
     # resource :tests do
     # Legacy v1 in-path versioning
     version "v1" do
